@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // print difference betweeen sum of even numbers and sum of odd numbers in the range(1,100)
+    var evenSum = 0,
+      oddSum = 0;
+
+    for (var i = 1; i <= 100; i++) {
+      if (i % 2 == 0) evenSum += i;
+      else oddSum += i;
+    }
+    evenSum > oddSum
+      ? console.log(evenSum - oddSum)
+      : console.log(oddSum - evenSum);
+  </script>
+</html>

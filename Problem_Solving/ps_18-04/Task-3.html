@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Write a program to print difference of even sum & odd sum in the range(1,50) by using switch
+
+    var evenSum = 0,
+      oddSum = 0,
+      diff;
+    for (var i = 1; i <= 50; i++) {
+      switch (i % 2) {
+        case 0:
+          evenSum += i;
+          break;
+        case 1:
+          oddSum += i;
+          break;
+      }
+    }
+    evenSum > oddSum ? (diff = evenSum - oddSum) : (diff = oddSum - evenSum);
+    console.log("difference is", diff);
+  </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Write a program to find largest number among three number
+    // input: n1=5,n2=9,n3=-3
+    // output: 9 is largest number
+
+    var n1 = 5,
+      n2 = 9,
+      n3 = -3;
+    switch (n1 > n2 && n1 > n3) {
+      case true:
+        console.log("5 is largest number");
+        break;
+      case false:
+        switch (n2 > n1 && n2 > n3) {
+          case true:
+            console.log("9 is largest number");
+            break;
+          case false:
+            console.log("-3 is largest number");
+            break;
+        }
+    }
+  </script>
+</html>
