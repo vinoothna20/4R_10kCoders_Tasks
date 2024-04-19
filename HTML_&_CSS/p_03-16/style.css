@@ -1,0 +1,149 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+body {
+  background: #f0f2f5;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 335px;
+  padding: 19px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #0866ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+}
+#sec_1 {
+  margin: 190px 275px;
+}
+input[type="submit"]:hover {
+  background-color: #1877f2;
+}
+.form {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px 20px 24px;
+  box-shadow: 0px 0px 10px 0px grey;
+  position: relative;
+}
+#icon {
+  position: absolute;
+  top: 30%;
+}
+footer .add a {
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid;
+  padding: 0px 11px;
+}
+footer .add a:hover {
+  text-decoration: none;
+  background-color: #8a8d91;
+}
+#icon img {
+  width: 20%;
+}
+#icon h2 {
+  font-size: 25px;
+  width: 41%;
+  margin-left: 20px;
+  margin-top: 0;
+  font-weight: 200;
+}
+#form {
+  float: right;
+}
+.forgot {
+  text-align: center;
+  border-bottom: 1px solid #e6dbdb;
+  text-decoration: none;
+}
+.forgot a {
+  text-decoration: none;
+  color: #0866ff;
+}
+.forgot a:hover {
+  text-decoration: underline;
+}
+.btn {
+  text-align: center;
+  background: #42b72a;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 18px 70px 0;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #36a420;
+  border-color: #36a420;
+}
+.page {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+.page a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.page a:hover {
+  text-decoration: underline #000;
+}
+footer {
+  display: block;
+}
+footer {
+  display: inline-block;
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 34px 127px;
+  color: grey;
+  font-size: 13px;
+}
+footer div ul li {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.75rem;
+}
+footer .list {
+  border-bottom: 1px solid silver;
+  padding: 0;
+}
+footer div a {
+  text-decoration: none;
+  color: grey;
+}
+footer div a:hover {
+  text-decoration: underline;
+}
+footer div:last-child {
+  margin-top: 13px;
+}
+footer div ul {
+  padding: 0;
+}

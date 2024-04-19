@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+      <form action="">
+        <table>
+          <tr>
+            <td>
+              <label for="">FIRST NAME</label>
+            </td>
+            <td>
+              <input class="fst-name" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">LAST NAME</label>
+            </td>
+            <td>
+              <input class="lst-name" type="text" />
+            </td>
+          </tr>
+          <!-- <tr>
+            <td>
+              <label for="">DATE OF BIRTH</label>
+            </td>
+            <td>
+              <input type="date" />
+            </td>
+          </tr> -->
+          <tr>
+            <td>
+              <label for="">AGE</label>
+            </td>
+            <td>
+              <input
+                class="age-inp"
+                type="number"
+                min="18"
+                max="21"
+                value="18"
+                title="must be between 18 and 21"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">EMAIL ID</label>
+            </td>
+            <td>
+              <input class="mail-inp" type="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">MOBILE NO.</label>
+            </td>
+            <td class="mbl-td">
+              <input type="tel" class="mbl-inp" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">GENDER</label>
+            </td>
+            <td class="rdo-gap">
+              <input type="radio" name="rdo-btn" /> Male &nbsp;
+              <input type="radio" name="rdo-btn" /> Female
+            </td>
+          </tr>
+          <!-- <tr>
+            <td style="vertical-align: baseline">
+              <label for="">ADDRESS</label>
+            </td>
+            <td>
+              <textarea name="" id="" cols="26" rows="8"></textarea>
+            </td>
+          </tr> -->
+          <tr>
+            <td>
+              <label for="">STATE</label>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="">-- SELECT --</option>
+                <option class="opt" value="">Andhra Pradesh</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Tamil Nadu</option>
+                <option value="">Telengana</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="" title="disable">COUNTRY</label>
+            </td>
+            <td>
+              <input class="cntry" type="text" disabled value="India" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">HOBBIES</label>
+            </td>
+            <td class="chk-gap">
+              <input type="checkbox" /> Drawing &nbsp;
+              <input type="checkbox" /> Singing &nbsp;
+              <input type="checkbox" /> Dancing &nbsp;
+              <input class="others-cls" type="checkbox" /> Others
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

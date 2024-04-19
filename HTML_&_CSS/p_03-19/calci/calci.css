@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(132deg, #0e1a4fdb, #2f435e, #426672);
+}
+
+body > div {
+  background-color: #020202e8;
+  width: 320px;
+  padding: 30px 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+}
+
+body > div > div:first-child {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body > div input {
+  border: none;
+  width: 80%;
+  font-size: 28px;
+  padding: 10px;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px 3px gray;
+  background: linear-gradient(
+    132deg,
+    rgb(72 94 191 / 86%),
+    rgb(47, 67, 94),
+    rgb(66, 102, 114)
+  );
+  font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  gap: 25px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: black;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 50%;
+  color: #37f8df;
+  box-shadow: 0px 0px 7px 0px;
+}
+
+.item-1 {
+  grid-column: span 2;
+  border-radius: 5%;
+}
+
+.item-2 {
+  height: auto;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  border-radius: 5%;
+}
+
+.item-3 {
+  color: #ca0d0d;
+}
+
+.item-2,
+.item-4 {
+  color: #7af47a;
+}
