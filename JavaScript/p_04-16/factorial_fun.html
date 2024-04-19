@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function fact(num) {
+      if (num == 0 || num == 1) return 1;
+      else {
+        var p = 1;
+        for (var i = num; i > 1; i--) {
+          p *= i;
+        }
+        return p;
+      }
+    }
+    console.log(fact(5));
+  </script>
+</html>

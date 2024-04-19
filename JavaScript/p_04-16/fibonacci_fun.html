@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function fib(num) {
+      var a = 0,
+        b = 1,
+        s = 0;
+      console.log(a);
+      console.log(b);
+      for (var i = 3; i <= num; i++) {
+        s = a + b;
+        a = b;
+        b = s;
+        console.log(s);
+      }
+    }
+
+    fib(10);
+  </script>
+</html>

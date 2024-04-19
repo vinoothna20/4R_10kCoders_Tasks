@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // fibonacci series up to 100
+
+    // for loop
+    console.log("fibonacci series upto 10 using for loop");
+    var a = 0,
+      b = 1,
+      s = a + b;
+    console.log(a);
+    console.log(b);
+    for (; s < 100; s = a + b) {
+      console.log(s);
+      s = a + b;
+      a = b;
+      b = s;
+    }
+
+    // while loop
+    console.log("fibonacci series upto 10 using while loop");
+    var a = 0,
+      b = 1,
+      s = a + b;
+    console.log(a);
+    console.log(b);
+    while (s < 100) {
+      console.log(s);
+      s = a + b;
+      a = b;
+      b = s;
+    }
+
+    // do whie loop
+    console.log("fibonacci series upto 10 using do while loop");
+    var a = 0,
+      b = 1,
+      s = a + b;
+    console.log(a);
+    console.log(b);
+    do {
+      console.log(s);
+      s = a + b;
+      a = b;
+      b = s;
+    } while (s < 100);
+  </script>
+</html>

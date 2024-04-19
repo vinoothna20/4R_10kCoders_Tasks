@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var employee = { name: "kiran", age: 21, salary: 45000 };
+
+    console.log(employee);
+
+    //  1. in an object user cannot able to edit or update the value of one key (id)
+
+    Object.defineProperty(employee, "salary", {
+      value: 45000,
+      writable: false,
+    });
+
+    employee.salary = 35000;
+    employee.age = 22;
+
+    console.log(employee);
+
+    //  2. in an object user cannot able to edit or update the values of all keys
+
+    Object.freeze(employee);
+
+    employee.name = "sai";
+    employee.salary = 35000;
+    employee.age = 23;
+
+    console.log(employee);
+
+    //  3. in an object user cannot able to add new properties
+
+    Object.seal(employee);
+
+    employee["location"] = "hyderabad";
+
+    console.log(employee);
+  </script>
+</html>
